@@ -16,12 +16,15 @@ function App() {
           <NavBar />
         </Router>
         <header className="App-header">
-        <h2 style={{ paddingTop: '6%' }}>
-          <strong>Software Engineer</strong>
+        <h2 style={{ paddingTop: '6%', fontFamily: 'Georgia, serif', fontSize: '55px' }}>
+          Amy Phan
         </h2>
-          <h1 style={{ paddingTop: '1%' }}>Amy Phan</h1>
-          <p style={{ paddingTop: '0.5%' }}>Software Engineer @ JPMorgan Chase & Co.</p>
-          <p style={{ paddingBottom: '5%' }}>Graphic Design Coordinator @ Society of Asian Scientists and Engineers (SASE)</p>
+          <p style={{ fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold' }}>
+            Software Engineer @ JPMorgan Chase & Co.
+          </p>
+          <p style={{ paddingBottom: '6%', fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold'  }}>
+            Graphic Design Coordinator @ Society of Asian Scientists and Engineers (SASE)
+          </p>
             <div>
               <a
                 className="logos"
