@@ -1,6 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 .App {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
+  background-color: black;
+  width: 100%;
 }
 
 .headers {
@@ -34,4 +44,55 @@
   padding-top: 8%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.home-job-screen {
+  background-color: black;
+  position: absolute;
+  height: auto;
+  width: 100%;
+  display: flex;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-bottom: 15%;
+  z-index: 2;
+}
+
+.job-container {
+  color: white;
+  width: 68%;
+}
+
+.company-name {
+  font-size: 20px;
+}
+
+.job-position {
+  font-size: 18px;
+}
+
+.job-tags {
+  padding-top: 20px;
+  display: flex;
+  gap: 16px;
+  justify-content: center; 
+}
+
+.tag {
+  background-color: #a4a4a4b4; 
+  padding: 8px 12px;
+  border-radius: 5px; 
+  font-size: 13px;
+}
+
+.job-description {
+  font-size: 18px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 25px;
+  width: 70%;
+}
+
+.project-hyperlink {
+  font-size: 18px;
 }

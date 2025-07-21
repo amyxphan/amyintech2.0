@@ -7,7 +7,9 @@ import olympicLoop from './backgroundScreens/olympicLoop.mp4';
 
 function App() {
   return (
-    <div className="App" style={{ position: 'relative' }}>
+    <div className="App" style={{ position: 'absolute' }}>
+
+    <div>
       <video className="background-screen" autoPlay loop muted>
         <source src={olympicLoop} type="video/mp4" />
       </video>
@@ -20,48 +22,69 @@ function App() {
             <Route path="/work" element={<Work />} />
           </Routes>
         </Router>
-        <header className="App-header">
-        <h2 style={{ paddingTop: '12%', fontFamily: 'Georgia, serif', fontSize: '55px' }}>
-          Amy Phan
-        </h2>
-          <p style={{ fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold' }}>
-            Software Engineer @ JPMorgan Chase & Co.
-          </p>
-          <p style={{ paddingBottom: '6%', fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold'  }}>
-            Graphic Design Coordinator @ Society of Asian Scientists and Engineers (SASE)
-          </p>
-            <div>
-              <a
+          <header className="App-header">
+          <h2 style={{ paddingTop: '12%', fontFamily: 'Georgia, serif', fontSize: '55px' }}>
+            Amy Phan
+          </h2>
+            <p style={{ fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold' }}>
+              Software Engineer @ JPMorgan Chase & Co.
+            </p>
+            <p style={{ paddingBottom: '6%', fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold'  }}>
+              Graphic Design Coordinator @ Society of Asian Scientists and Engineers (SASE)
+            </p>
+              <div>
+                <a
+                  className="logos"
+                  href="https://github.com/amyxphan"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <img src="/GitHub.png" alt="" style={{ height: '50px', paddingRight: "4px" }} />
+                </a>
+                <a
+                  className="logos"
+                  href="https://www.linkedin.com/in/amyphan2/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="/LinkedIn.webp" alt="" style={{ height: '50px' }} />
+                </a>
+                <a
                 className="logos"
-                href="https://github.com/amyxphan"
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <img src="/GitHub.png" alt="" style={{ height: '50px', paddingRight: "4px" }} />
-              </a>
-              <a
-                className="logos"
-                href="https://www.linkedin.com/in/amyphan2/"
+                href="https://drive.google.com/file/d/1OOr9WuLC4ZBiJG985fZDhA3rm3ZSh7Bj/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                <img src="/LinkedIn.webp" alt="" style={{ height: '50px' }} />
-              </a>
-              <a
-              className="logos"
-              href="https://drive.google.com/file/d/1OOr9WuLC4ZBiJG985fZDhA3rm3ZSh7Bj/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              <img src="/Resume.png" alt="" style={{ height: '50px' }} />
-              </a>
+                >
+                <img src="/Resume.png" alt="" style={{ height: '50px' }} />
+                </a>
+              </div>
+              <div className='scroll-down'>
+                <p>**add a down arrow here**</p>
+              </div>
+          </header>
+        </div>
+      </div>
+      <div className='home-job-screen'>
+        <img src="/jpmc.webp" alt="jpmcLogo" style={{ width: '350px', height: 'auto' }} />
+          <div className="job-container">
+            <b className='company-name'> JPMORGAN CHASE & CO. </b>
+            <i className='job-position'> Software Engineer </i>
+            <div className='job-tags'>
+              <b className='tag'> FRONTEND DEVELOPER </b>
+              <b className='tag'> END-TO-END/ADA TEST AUTOMATION </b>
             </div>
-          <div className='scroll-down'>
-            <p>**add a down arrow here**</p>
+            <p className='job-description'> 
+              Building and maintaining the Chase existing customer homepage and Refer-a-Friend experience 
+              on web and mobile platforms; enhancing the user experience for millions of daily customers. 
+            </p>
+            <b className='project-hyperlink'> View Projects </b>
           </div>
-        </header>
+      </div>
+      <div>
+        bottom contact info section
       </div>
     </div>
+    
   );
 }
 
