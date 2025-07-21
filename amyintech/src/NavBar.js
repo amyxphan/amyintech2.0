@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
-import { Nav, NavLink, Bars, NavMenu } from "./NavElements";
+import { Nav, NavLink, NavMenu } from "./NavElements";
 import './NavBar.css'; 
 
 function TopNavBar() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () => {
-      setIsOpen(!isOpen);
-    };
   return (
     <div className="navbar-container">
-      <Nav className="navbar">
-        <Bars onClick={toggleMenu} />
-        <NavMenu className="navbar-links" isOpen={isOpen}>
-          <NavLink to="/" onClick={() => setIsOpen(false)}>Home</NavLink>
-          <NavLink to="/About" activeStyle onClick={() => setIsOpen(false)}>About</NavLink>
-        </NavMenu>
-      </Nav>
+        <Nav className="navbar">
+            <div className="nav-left">
+                <NavLink to="/">Amy Phan</NavLink>
+            </div>
+            <NavMenu className="navbar-links">
+                <NavLink to="/Work">Work</NavLink>
+                <NavLink to="/About">About</NavLink>
+            </NavMenu>
+        </Nav>
     </div>
     );
 };

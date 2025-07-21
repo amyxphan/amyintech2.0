@@ -1,28 +1,34 @@
-body, html, ul, li, a {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-  }
-  
-  .navbar-container {
+.navbar {
     display: flex;
-    justify-content: center; 
+    justify-content: space-between;
     align-items: center;
-    width: 100%; 
-    height: 100px;
-  }
+    padding: 1% 1.5%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
   
-  .navbar-links {
+.nav-left {
+    flex: 1;
+    font-family: 'Georgia, serif';
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.navbar-links {
     display: flex;
-    gap: 1em;
-  }
-  
-  .navbar-links li a {
-    color: white;
-    padding: 0.5em 1em;
-  }
-  
-  .navbar-links li a:hover {
-    border-radius: 5px;
-  }
+    font-family: 'serif';
+    font-size: 18px;
+    gap: 1%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.navbar .nav-left a, .navbar .navbar-links a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* or none, or color change */
+}

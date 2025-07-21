@@ -1,11 +1,11 @@
-.About {
+.Work {
     text-align: center;
     padding-right: 40px;
     padding-left: 40px;
     background-color: #282c34;
-  }
+}
   
-  .About-header {
+.Work-header {
     padding-top: 100px;
     min-height: 60vh;
     display: flex;
@@ -14,4 +14,4 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-  }
+}

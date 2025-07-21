@@ -1,6 +1,7 @@
 import './App.css';
-import NavBar from './NavBar'
-import About from './About'
+import NavBar from './NavBar';
+import About from './About';
+import Work from './Work';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import olympicLoop from './backgroundScreens/olympicLoop.mp4';
 
@@ -14,9 +15,13 @@ function App() {
       <div className="overlay-content">
         <Router>
           <NavBar />
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
+          </Routes>
         </Router>
         <header className="App-header">
-        <h2 style={{ paddingTop: '6%', fontFamily: 'Georgia, serif', fontSize: '55px' }}>
+        <h2 style={{ paddingTop: '12%', fontFamily: 'Georgia, serif', fontSize: '55px' }}>
           Amy Phan
         </h2>
           <p style={{ fontFamily: 'serif', fontSize: '18px', fontWeight: 'bold' }}>
