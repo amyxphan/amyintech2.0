@@ -63,12 +63,11 @@ function App() {
               </div>
           </header>
         </div>
-      </div>
-      <div className='home-job-screen'>
-        <img src="/jpmc.webp" alt="jpmcLogo" style={{ width: '350px', height: 'auto' }} />
+        <div className='home-job-screen'>
+          <img src="/jpmc.webp" alt="jpmcLogo" style={{ width: '350px', height: 'auto' }} />
           <div className="job-container">
             <b className='company-name'> JPMORGAN CHASE & CO. </b>
-            <i className='job-position'> Software Engineer </i>
+            <p className='job-position'> Software Engineer </p>
             <div className='job-tags'>
               <b className='tag'> FRONTEND DEVELOPER </b>
               <b className='tag'> END-TO-END/ADA TEST AUTOMATION </b>
@@ -77,11 +76,29 @@ function App() {
               Building and maintaining the Chase existing customer homepage and Refer-a-Friend experience 
               on web and mobile platforms; enhancing the user experience for millions of daily customers. 
             </p>
-            <b className='project-hyperlink'> View Projects </b>
+            <a
+              className="project-hyperlink"
+              href="/work"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
           </div>
-      </div>
-      <div>
-        bottom contact info section
+        </div>
+        {/* <div class="contact-section">
+          <h2>Contact Me</h2>
+          <p>I'd love to hear from you. Fill out the form below and I’ll get back to you soon.</p>
+
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
+            </div>
+            <input type="text" name="subject" placeholder="Subject" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+      </div> */}
       </div>
     </div>
     

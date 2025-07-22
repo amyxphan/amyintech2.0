@@ -61,18 +61,22 @@ html, body {
 .job-container {
   color: white;
   width: 68%;
+  flex-direction: horizantal;
 }
 
 .company-name {
   font-size: 20px;
+  padding-top: 200px;
 }
 
 .job-position {
   font-size: 18px;
+  font-style: italic;
 }
 
 .job-tags {
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
   display: flex;
   gap: 16px;
   justify-content: center; 
@@ -86,6 +90,7 @@ html, body {
 }
 
 .job-description {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 18px;
   padding-left: 15%;
   padding-right: 15%;
@@ -95,4 +100,73 @@ html, body {
 
 .project-hyperlink {
   font-size: 18px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-section {
+  background-color: #363636;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  padding-top: 15%;
+  padding-left: 10%;
+  padding-bottom: 15%;
+  z-index: 2;
+}
+
+.contact-section h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.contact-form button {
+  padding: 14px;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f0f0f0;
 }
