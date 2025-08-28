@@ -10,9 +10,14 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* Fixed Nav wrapper */}
         <div className="navbar-fixed">
           <NavBar />
+            {/* Routes that should render on navigation only */}
+            <Routes>
+              <Route path="/about" element={<About />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/" element={<></>} />
+            </Routes>
         </div>
 
         {/* Everything else gets padded down so it doesn't sit under the fixed nav */}
@@ -60,13 +65,6 @@ function App() {
               <a className="project-hyperlink" href="/work" rel="noopener noreferrer">View Project</a>
             </div>
           </section>
-
-          {/* Routes that should render on navigation only */}
-          <Routes>
-            <Route path="/about" element={<About />} />
-            <Route path="/work" element={<Work />} />
-            <Route path="/" element={<></>} />
-          </Routes>
         </main>
       </Router>
     </div>
