@@ -10,6 +10,7 @@ function TopNavBar() {
             </div>
             <NavMenu className="navbar-links">
                 <NavLink to="/Work">Work</NavLink>
+                <NavLink to="/Projects">Projects</NavLink>
                 <NavLink to="/About">About</NavLink>
             </NavMenu>
         </Nav>

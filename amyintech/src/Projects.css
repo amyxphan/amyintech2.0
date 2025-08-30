@@ -1,4 +1,4 @@
-.Work {
+.Projects {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     background-color: black;
@@ -8,7 +8,7 @@
     color: white;
 }
   
-.Work-header {
+.Projects-header {
     background-color: black;
     width: 100%;
     min-height: 100vh;
@@ -21,7 +21,7 @@
 }
 
 /* Home Job Section */
-.Work-screen {
+.Projects-screen {
     background-color: black;
     width: 100%;
     min-height: 100vh;
@@ -33,26 +33,26 @@
     z-index: 2;
   }
   
-  .work-logo {
+  .Projects-logo {
     max-width: 300px;
     width: 80%;
     height: auto;
     margin-bottom: 30px;
   }
   
-  .work-container {
+  .Projects-container {
     width: 100%;
     max-width: 800px;
     text-align: center;
   }
   
-  .work-name {
+  .Projects-name {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .work-tags {
+  .Projects-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -67,20 +67,20 @@
     font-size: 13px;
   }
   
-  .work-description {
+  .Projects-description {
     font-size: 16px;
     line-height: 1.6;
     margin: 0 auto 25px;
     max-width: 600px;
   }
   
-  .work-hyperlink {
+  .Projects-hyperlink {
     font-size: 18px;
     color: white;
     font-weight: bold;
     text-decoration: none;
   }
-  .work-hyperlink:hover {
+  .Projects-hyperlink:hover {
     text-decoration: underline;
   }
   

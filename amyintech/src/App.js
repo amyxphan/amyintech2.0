@@ -3,6 +3,7 @@ import './App.css';
 import NavBar from './NavBar';
 import About from './About';
 import Work from './Work';
+import Projects from './Projects';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import olympicLoop from './backgroundScreens/olympicLoop.mp4';
 
@@ -71,6 +72,7 @@ function App() {
             {/* Other Routes */}
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </main>
       </Router>
