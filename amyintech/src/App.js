@@ -44,26 +44,7 @@ function App() {
                           <img src="/Resume.png" alt="Resume" style={{ height: '50px' }} />
                         </a>
                       </div>
-
-                      <div className="scroll-down"><p>↓</p></div>
                     </header>
-                  </section>
-
-                  {/* Home Job Section */}
-                  <section className="home-job-screen">
-                    <img src="/jpmc.webp" alt="jpmcLogo" className="company-logo" />
-                    <div className="job-container">
-                      <b className="company-name">JPMORGAN CHASE & CO.</b>
-                      <p className="job-position">Software Engineer</p>
-                      <div className="job-tags">
-                        <b className="tag">FRONTEND DEVELOPER</b>
-                        <b className="tag">END-TO-END/ADA TEST AUTOMATION</b>
-                      </div>
-                      <p className="job-description">
-                        Building and maintaining the Chase existing customer homepage and Refer-a-Friend experience on web and mobile platforms; enhancing the user experience for millions of daily customers.
-                      </p>
-                      <a className="project-hyperlink" href="/work" rel="noopener noreferrer">View Project</a>
-                    </div>
                   </section>
                 </>
               }
