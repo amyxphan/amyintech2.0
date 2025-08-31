@@ -45,10 +45,29 @@
     max-width: 800px;
     text-align: center;
   }
+
+  .Work-details {
+    padding-top: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+  }
   
   .Work-name {
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .Work-subheader {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .Work-description {
+    font-size: 10px;
     margin-bottom: 10px;
   }
   
