@@ -4,48 +4,55 @@
     background-color: black;
     width: 100%;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden; /* keep everything inside */
     color: white;
-}
+  }
   
-.Work-header {
-    background-color: black;
+  /* New scroll container */
+  .Work-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  /* Each screen snaps into place */
+  .Work-screen {
+    position: relative; /* needed for overlay */
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 80px 20px;
     color: white;
-    z-index: 2;
-}
-
-/* Home Job Section */
-.Work-screen {
-    background-color: black;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px 20px;
-    color: white;
-    z-index: 2;
+    scroll-snap-align: start;
+  
+    /* Background settings */
+    background-size: cover;   /* cover screen, can crop slightly */
+    background-position: center;
+    background-repeat: no-repeat;
   }
   
-  .Work-logo {
-    max-width: 300px;
-    width: 80%;
-    height: auto;
-    margin-bottom: 30px;
+  /* Tint overlay */
+  .Work-screen::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* top:0; right:0; bottom:0; left:0 */
+    background: rgba(0, 0, 0, 0.5); /* black tint at 50% opacity */
+    z-index: 1; /* below content */
   }
   
+  /* Ensure content is above the overlay */
   .Work-container {
+    position: relative;
+    z-index: 2;
     width: 100%;
     max-width: 800px;
     text-align: center;
   }
-
+  
   .Work-details {
     padding-top: 20px;
     width: 80%;
@@ -59,31 +66,11 @@
     margin-bottom: 10px;
     text-align: center;
   }
-
+  
   .Work-subheader {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 10px;
-  }
-
-  .Work-description {
-    font-size: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .Work-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  .tag {
-    background-color: #a4a4a4b4;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 13px;
   }
   
   .Work-description {
@@ -93,13 +80,34 @@
     max-width: 600px;
   }
   
-  .Work-hyperlink {
-    font-size: 18px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
+  /* Right-side navigation */
+  .Work-nav {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
   }
-  .Work-hyperlink:hover {
-    text-decoration: underline;
+  
+  .Work-nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: gray;
+    display: block;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .Work-nav-dot:hover {
+    transform: scale(1.3);
+  }
+  
+  /* Highlight active dot */
+  .Work-nav-dot.active {
+    background: white;
+    transform: scale(1.4);
   }
   
