@@ -33,26 +33,26 @@
     z-index: 2;
   }
   
-  .work-logo {
+  .Work-logo {
     max-width: 300px;
     width: 80%;
     height: auto;
     margin-bottom: 30px;
   }
   
-  .work-container {
+  .Work-container {
     width: 100%;
     max-width: 800px;
     text-align: center;
   }
   
-  .work-name {
+  .Work-name {
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 10px;
   }
   
-  .work-tags {
+  .Work-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
@@ -67,20 +67,20 @@
     font-size: 13px;
   }
   
-  .work-description {
+  .Work-description {
     font-size: 16px;
     line-height: 1.6;
     margin: 0 auto 25px;
     max-width: 600px;
   }
   
-  .work-hyperlink {
+  .Work-hyperlink {
     font-size: 18px;
     color: white;
     font-weight: bold;
     text-decoration: none;
   }
-  .work-hyperlink:hover {
+  .Work-hyperlink:hover {
     text-decoration: underline;
   }
   
