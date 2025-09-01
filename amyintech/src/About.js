@@ -52,11 +52,10 @@ function About() {
             <div className="About-details">
               <p className="About-subheader"> ADD PHOTOS </p>
               <p className="About-description">
-                • founded a new chapter of SASE at UNT<br />
-                • served as President for SASE UNT (2 yrs)<br />
-                • served as SASE South Regional Coordinator<br />
-                • served as Vice President for Engineers United (HackUNT)<br />
-                • made Dean’s List (multiple semesters)<br />
+                • 2021 Founded SASE at the University of North Texas<br />
+                • 2021-23 President for SASE UNT (2 yrs)<br />
+                • 2023-24 SASE South Regional Coordinator<br />
+                • 2023-24 Vice President - Engineers United (HackUNT)<br />
                 • 2022 UNT New Student Org of the Year<br />
                 • 2022 SASE Outstanding New Chapter<br />
                 • 2022 CodeForGood Hackathon Winner<br />
