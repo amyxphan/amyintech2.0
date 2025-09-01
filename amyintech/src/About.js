@@ -50,7 +50,23 @@ function About() {
           <div className="About-container">
             <b className="About-name">Leadership + Highlights</b>
             <div className="About-details">
-              <p className="About-subheader">ADD highlights here</p>
+              <p className="About-subheader"> ADD PHOTOS </p>
+              <p className="About-description">
+                • founded a new chapter of SASE at UNT<br />
+                • served as President for SASE UNT (2 yrs)<br />
+                • served as SASE South Regional Coordinator<br />
+                • served as Vice President for Engineers United (HackUNT)<br />
+                • made Dean’s List (multiple semesters)<br />
+                • 2022 UNT New Student Org of the Year<br />
+                • 2022 SASE Outstanding New Chapter<br />
+                • 2022 CodeForGood Hackathon Winner<br />
+                • 2023 James Carls Matthews President of the Year<br />
+                • 2023 SASE South Region Collegiate Star Honorable Mention<br />
+                • 2023 SWE Intern at JPMorgan Chase<br />
+                • 2023 Grace Hopper Celebration Scholar<br />
+                • 2024 WEHack Winner (2nd place L3Harris Challenge)<br />
+                • 2024 Golden Eagle Award Recipient
+              </p>
             </div>
           </div>
         </section>
