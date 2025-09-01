@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Work.css"; 
-import work1 from './backgroundScreens/work1.jpg';
+import work1 from './backgroundScreens/work1.mp4';
 import work2 from './backgroundScreens/work2.jpg';
 
 function Work() {
@@ -28,22 +28,27 @@ function Work() {
       {/* Scrollable container */}
       <div className="Work-scroll">
         {/* Work Exp Section 1 */}
-        <section
-          id="section1"
-          className="Work-screen"
-          style={{ backgroundImage: `url(${work1})` }}
-        >
+        <section id="section1" className="Work-screen">
+          {/* Background video */}
+          <video 
+            className="Work-video-bg"
+            src={work1}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
           <div className="Work-container">
             <b className="Work-name">JPMorgan Chase & Co.</b>
             <div className="Work-details">
               <b className="Work-subheader">Role</b>
-              <p className="Work-description">Software Engineer</p>
+                <p className="Work-description">Software Engineer</p>
               <b className="Work-subheader">Duration</b>
-              <p className="Work-description">August 2024 - Present</p>
+                <p className="Work-description">August 2024 - Present</p>
               <b className="Work-subheader">Tools</b>
-              <p className="Work-description">Java, React, Cypress, Gherkin, AWS</p>
+               <p className="Work-description">Java, React, Cypress, Gherkin, AWS</p>
               <b className="Work-subheader">Team</b>
-              <p className="Work-description">
+               <p className="Work-description">
                 Customer Acquisition Experiences (Refer-A-Friend) and Explore Products
               </p>
               <p className="Work-description">
@@ -58,7 +63,8 @@ function Work() {
           </div>
         </section>
 
-        {/* Work Exp Section 1 */}
+
+        {/* Work Exp Section 2 */}
         <section
           id="section2"
           className="Work-screen"
