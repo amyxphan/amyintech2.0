@@ -1,32 +1,35 @@
 import './About.css'; 
+import profile from './backgroundScreens/profile.jpg'; // <-- Add your profile image here
 
 function About() {
-  // should be a running page with an about me, job experince, & values section
   return (
     <div className="About">
       <header className="About-header">
-        <div>
-          {/* About Section */}
-          <section className="About-screen">
-            <div className="About-container">
-              <b className="About-name">Quick Facts</b>
-              <div className="About-details">
-                <div>
-                    <b className="About-subheader"> 💻 B.S. Computer Engineering at UNT</b>
-                    <b className="About-subheader"> 👩‍💻 Software Engineer at JPMorgan Chase & Co.</b>
-                    <b className="About-subheader"> 👩‍🎨 Graphic Design Coordinator for STEM Connect 2025</b>
-                    <b className="About-subheader"> 🧪 Founder of Society of Asian Scientists and Engineers at UNT (SASE UNT)</b>
-                </div>
-              </div>
+
+        {/* High-level About Section */}
+        <section className="About-screen">
+          <div className="About-container About-container-flex">
+            {/* Circular profile pic */}
+            <div className="About-pfp-container">
+              <img src={profile} alt="Profile" className="About-pfp" />
             </div>
-          </section>
-          {/* About Section */}
-          <section className="About-screen">
-            <div className="About-container">
-              <b className="About-name">About Me</b>
-              <div className="About-details">
-                <div>
-                    <p className="About-description">
+
+            {/* Quick Facts content */}
+            <div className="About-details">
+              <p className="About-subheader">💻 B.S. Computer Engineering at UNT</p>
+              <p className="About-subheader">👩‍💻 Software Engineer at JPMorgan Chase & Co.</p>
+              <p className="About-subheader">👩‍🎨 Graphic Design Coordinator for STEM Connect 2025</p>
+              <p className="About-subheader">🧪 Founder of Society of Asian Scientists and Engineers at UNT (SASE UNT)</p>
+            </div>
+          </div>
+        </section>
+
+        {/* About Me Bio Section */}
+        <section className="About-screen">
+          <div className="About-container">
+            <b className="About-name">About Me</b>
+            <div className="About-details">
+              <p className="About-description">
                     I grew up in a low-income, immigrant family near Dallas, TX, where my parents encouraged me to seize every opportunity. 
                     As a child, I often stole my dad’s screwdriver to take apart and reassemble household items. At 12, I entered my first 
                     STEM competition and won 1st place in the state of Texas for math, marking the beginning of my engineering journey. 5 
@@ -37,26 +40,21 @@ function About() {
                     studies. I'm currently a Software Engineer at JPMorgan Chase & Co. In my free time, I enjoy hiking, pilates, playing with my 
                     pet hamsters Mochi and Miso, and taking care of my 30+ plants. I am passionate about accessibility and aim to create innovative 
                     solutions that bridge gaps and drive positive change in the tech industry.
-                    </p>
-                </div>  
-              </div>
+              </p>
             </div>
-          </section>
-          {/* About Section */}
-          <section className="About-screen">
-            <div className="About-container">
-              <b className="About-name">Leadership + Awards</b>
-              <div className="About-details">
-                <div>
-                <div>
-                    <b className="Projects-subheader">Tools & Frameworks</b>
-                </div>
-                <p className="Projects-description"> Swift, SwiftUI</p>
-                </div>  
-              </div>
+          </div>
+        </section>
+
+        {/* Leadership + Highlights Section */}
+        <section className="About-screen">
+          <div className="About-container">
+            <b className="About-name">Leadership + Highlights</b>
+            <div className="About-details">
+              <p className="About-subheader">ADD highlights here</p>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
+
       </header>
     </div>
   );
