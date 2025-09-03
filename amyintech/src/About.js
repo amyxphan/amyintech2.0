@@ -106,30 +106,34 @@ function About() {
       <footer className="About-footer">
         <div className="About-footer-content">
           <b className="About-footer-title">amyintech</b>
+          <div className="About-footer-sections">
+            <div className="About-footer-section">
+              <p className="About-footer-heading">Contact Me</p>
+              <p className="About-footer-text">phan.amy28@gmail.com</p>
+            </div>
 
-          <div className="About-footer-section">
-            <p className="About-footer-heading">Contact Me</p>
-            <p className="About-footer-text">phan.amy28@gmail.com</p>
-          </div>
-
-          <div className="About-footer-section">
-            <p className="About-footer-heading">Let's Connect</p>
-            <a 
-              href="https://www.linkedin.com/in/amyphan2/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="About-footer-link"
-            >
-              LinkedIn
-            </a>
-            <a 
-              href="https://github.com/amyxphan"
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="About-footer-link"
-            >
-              GitHub
-            </a>
+            <div className="About-footer-section">
+              <p className="About-footer-heading">Let's Connect</p>
+              <p className="About-footer-text">
+                <a 
+                  href="https://www.linkedin.com/in/amyphan2/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="About-footer-link"
+                >
+                  LinkedIn
+                </a>
+                {" | "}
+                <a 
+                  href="https://github.com/amyxphan"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="About-footer-link"
+                >
+                  GitHub
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </footer>

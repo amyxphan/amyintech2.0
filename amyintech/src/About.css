@@ -104,11 +104,10 @@
 }
 
 .About-footer-content {
-  max-width: 1000px;             /* keep text aligned with page content */
-  margin: 0 auto;                /* center horizontally */
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  max-width: 1300px; /* match your page’s main container width */
+  margin: 0 auto;
+  text-align: left; /* align footer text left */
+  padding-left: 1rem; /* small buffer if your page has padding */
 }
 
 .About-footer-title {
@@ -119,17 +118,16 @@
 .About-footer-section {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  margin: 0.25rem 0; /* compact spacing */
 }
-
+  
 .About-footer-heading {
-  font-weight: 600;
-  font-size: 1rem;
-  margin-bottom: 0.25rem;
+    font-weight: bold;
+    margin-bottom: 0.25rem;
 }
 
 .About-footer-text {
-  font-size: 0.95rem;
+  margin-top: 0; /* remove extra top margin */
 }
 
 .About-footer-link {
@@ -140,4 +138,16 @@
 }
 .About-footer-link:hover {
   color: #4dabf7;
+}
+
+.About-footer-sections {
+  display: flex;
+  gap: 2rem; /* spacing between sections */
+  flex-wrap: wrap; /* ensures wrapping on smaller screens */
+}
+
+.About-footer-section {
+  flex: 1; /* let sections share space evenly */
+  margin: 0.25rem 0; /* small consistent spacing */
+  min-width: 200px; /* forces column layout on small screens */
 }
