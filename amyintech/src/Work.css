@@ -26,7 +26,6 @@
     flex-direction: column;
     align-items: flex-start;    /* 👈 left aligned */
     justify-content: center;    /* 👈 vertical center */
-    padding: 60px 20px;
     color: white;
     scroll-snap-align: start;
   
