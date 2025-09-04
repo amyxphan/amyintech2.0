@@ -20,7 +20,8 @@
   .Work-screen {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; 
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     align-items: flex-start;    /* 👈 left aligned */
