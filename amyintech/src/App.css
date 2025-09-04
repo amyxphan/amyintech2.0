@@ -1,47 +1,54 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* stop horizontal scroll */
+}
+
 .App {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   background-color: black;
   width: 100%;
+  height: 100%; /* match viewport */
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden; /* prevent extra scroll */
   color: white;
 }
 
-/* Background video fills entire page */
 .background-screen {
-  position: fixed;  /* stays in place while scrolling */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh; 
   object-fit: cover;
-  z-index: -1; /* behind everything */
+  z-index: -1;
 }
 
 /* Hero Section */
 .overlay-content {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;              /* exact viewport height */
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5%;
+  padding: 2rem;
   text-align: center;
   color: white;
   z-index: 1;
-  overflow: hidden; /* keeps video clipped inside section */
+  overflow: hidden;
 }
 
 .hero-video {
-  position: absolute;
+  position: fixed;  /* stays fixed behind everything */
   top: 0; 
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  z-index: -1; /* behind text */
+  object-fit: cover; /* scale & crop correctly */
+  z-index: -1;       /* behind overlay text */
 }
 
 .hero-name {
@@ -56,72 +63,6 @@
   font-weight: bold;
 }
 
-.scroll-down {
-  margin-top: 40px;
-  font-size: 24px;
-  animation: bounce 1.5s infinite;
-}
-
-/* Home Job Section */
-.home-job-screen {
-  background-color: black;
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 80px 20px;
-  color: white;
-  z-index: 2;
-}
-
-.company-logo {
-  max-width: 300px;
-  width: 80%;
-  height: auto;
-  margin-bottom: 30px;
-}
-
-.job-container {
-  width: 100%;
-  max-width: 800px;
-  text-align: center;
-}
-
-.company-name {
-  font-size: 22px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.job-position {
-  font-size: 18px;
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.job-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.tag {
-  background-color: #a4a4a4b4;
-  padding: 8px 12px;
-  border-radius: 5px;
-  font-size: 13px;
-}
-
-.job-description {
-  font-size: 16px;
-  line-height: 1.6;
-  margin: 0 auto 25px;
-  max-width: 600px;
-}
-
 .project-hyperlink {
   font-size: 18px;
   color: white;
@@ -130,4 +71,9 @@
 }
 .project-hyperlink:hover {
   text-decoration: underline;
+}
+
+.logos {
+  padding-left: 5px;
+  padding-right: 5px;
 }
