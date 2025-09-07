@@ -7,15 +7,21 @@
     overflow: hidden;
     color: white;
   }
-  
-  /* Scroll container */
+
+  /* Force hide scrollbars across browsers */
   .Work-scroll {
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
   }
-  
+
+  /* Chrome, Safari, Edge */
+  .Work-scroll::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* optional */
+  }
+
   /* Each screen */
   .Work-screen {
     position: relative;
@@ -28,7 +34,6 @@
     justify-content: center;    /* 👈 vertical center */
     color: white;
     scroll-snap-align: start;
-  
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
