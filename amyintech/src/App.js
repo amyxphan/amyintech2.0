@@ -40,7 +40,7 @@ function App() {
                         <a className="logos" href="https://www.linkedin.com/in/amyphan2/" target="_blank" rel="noopener noreferrer">
                           <img src="/LinkedIn.webp" alt="LinkedIn" style={{ height: '50px' }} />
                         </a>
-                        <a className="logos" href="https://drive.google.com/file/d/1OOr9WuLC4ZBiJG985fZDhA3rm3ZSh7Bj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                        <a className="logos" href="https://drive.google.com/file/d/1F-ayQErRy3NHYIi6cddERjTN59kcRe-m/view?usp=sharing" target="_blank" rel="noopener noreferrer">
                           <img src="/Resume.png" alt="Resume" style={{ height: '50px' }} />
                         </a>
                       </div>
