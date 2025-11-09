@@ -93,8 +93,8 @@ function About() {
                 • 2023-24 SASE South Regional Coordinator<br />
                 • 2023-24 Engineers United (HackUNT) Vice President<br />
                 • 2024 WEHack Winner (2nd place L3Harris Challenge)<br />
-                • 2024 Golden Eagle Award Recipient
-                • 2025 Graphic Design Coordinator for STEM Connect 
+                • 2024 Golden Eagle Award Recipient<br />
+                • 2025 Graphic Design Coordinator for STEM Connect<br />
               </p>
               <div className="About-slideshow">
                 <img
