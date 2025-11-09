@@ -47,7 +47,7 @@ function Projects() {
                     UI/UX with handdrawn componests, and create a product that's accessible for users to use and get the help they need.
               </p>
             </div>
-            {/* <a className="Projects-hyperlink" href="/work" rel="noopener noreferrer">View Project</a> */}
+            {/* add hyperlink to project demo + figma here*/}
           </div>
         </section>
 
@@ -72,7 +72,7 @@ function Projects() {
                     at the 2024 WEHack UTD hackathon for the L3Harris Challenge.
               </p>
             </div>
-            {/* <a className="Projects-hyperlink" href="/work" rel="noopener noreferrer">View Project</a> */}
+            {/* add hyperlink to project demo + figma here*/}
           </div>
         </section>
 
@@ -96,7 +96,7 @@ function Projects() {
                 together efficiently.
               </p>
             </div>
-            {/* <a className="Projects-hyperlink" href="/work" rel="noopener noreferrer">View Project</a> */}
+              {/* add hyperlink to project demo + figma here*/}
           </div>
         </section>
 
@@ -120,17 +120,33 @@ function Projects() {
                     me. In the end, our project was one of the groups that won the 2022 hackathon in Plano, TX!
               </p>
             </div>
-            {/* <a className="Projects-hyperlink" href="/work" rel="noopener noreferrer">View Project</a> */}
+            {/* add hyperlink to project demo + figma here*/}
           </div>
         </section>
       </div>
 
       {/* Navigation Dots */}
       <nav className="Projects-nav">
-        <a href="#section1" className={`Projects-nav-dot ${activeSection === "section1" ? "active" : ""}`} />
-        <a href="#section2" className={`Projects-nav-dot ${activeSection === "section2" ? "active" : ""}`} />
-        <a href="#section3" className={`Projects-nav-dot ${activeSection === "section3" ? "active" : ""}`} />
-        <a href="#section4" className={`Projects-nav-dot ${activeSection === "section4" ? "active" : ""}`} />
+        <a 
+          href="#section1" 
+          className={`Projects-nav-dot ${activeSection === "section1" ? "active" : ""}`} 
+          aria-label="Go to Project section 1" 
+        ></a>
+        <a 
+          href="#section2" 
+          className={`Projects-nav-dot ${activeSection === "section2" ? "active" : ""}`} 
+          aria-label="Go to Project section 2" 
+        ></a>
+        <a 
+          href="#section3" 
+          className={`Projects-nav-dot ${activeSection === "section3" ? "active" : ""}`} 
+          aria-label="Go to Project section 3" 
+        ></a>
+        <a 
+          href="#section4" 
+          className={`Projects-nav-dot ${activeSection === "section4" ? "active" : ""}`} 
+          aria-label="Go to Project section 4" 
+        ></a>
       </nav>
     </div>
   );

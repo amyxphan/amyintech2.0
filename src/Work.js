@@ -96,11 +96,13 @@ function Work() {
         <a
           href="#section1"
           className={`Work-nav-dot ${activeSection === "section1" ? "active" : ""}`}
-        />
+          aria-label="Go to section 1" 
+        ></a> 
         <a
           href="#section2"
           className={`Work-nav-dot ${activeSection === "section2" ? "active" : ""}`}
-        />
+          aria-label="Go to section 2" 
+        ></a>
       </nav>
     </div>
   );
