@@ -62,8 +62,8 @@ function About() {
               focus on frontend development and test automation for web and mobile products.
 
               I grew up in a low-income, immigrant family near Dallas, TX, where curiosity and resilience shaped my path. As a child, I would borrow my dad’s 
-              screwdriver to take apart household items just to see how they worked. At 12, I won 1st place in a statewide math competition—an early spark that 
-              fueled my love for engineering.
+              screwdriver to take apart household items just to see how they worked. At 12, I won 1st place in a statewide math competition which became my first 
+              spark that fueled my love for engineering.
 
               By the time I finished high school (in just three years), I had taken on leadership roles in 3 clubs, earned 39 college credits, and helped 
               lead our varsity girls’ basketball team to a top 3 national ranking. I went on to earn my B.S. in Computer Engineering at the University of North 
