@@ -71,7 +71,7 @@ function About() {
               hackathons and side projects to grow my software skills.
 
               I’m passionate about accessibility and building innovative solutions that create positive change. Outside of work, you’ll find me exploring 
-              national parks, practicing pilates, caring for 30+ plants, or playing with my two hamsters, Mochi and Miso.
+              national parks, practicing pilates, caring for 30+ plants, or playing with my two hamsters, Mochi and Miso. 
               </p>
             </section>
           </div>
