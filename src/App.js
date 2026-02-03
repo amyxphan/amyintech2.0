@@ -31,7 +31,6 @@ function App() {
                     <header className="App-header">
                       <h2 className="hero-name">Amy Phan</h2>
                       <p className="hero-subtitle">Software Engineer @ JPMorgan Chase & Co.</p>
-                      <p className="hero-subtitle">Graphic Design Coordinator @ Society of Asian Scientists and Engineers (SASE)</p>
 
                       <div>
                         <a className="logos" href="https://github.com/amyxphan" target="_blank" rel="noopener noreferrer">
