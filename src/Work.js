@@ -42,12 +42,15 @@ function Work() {
             <b className="Work-name">JPMorgan Chase & Co.</b>
             <div className="Work-details">
               <b className="Work-subheader">Role</b>
-                <p className="Work-description">Software Engineer</p>
+                <p className="Work-description">Software Engineer I</p>
               <b className="Work-subheader">Duration</b>
                 <p className="Work-description">August 2024 - Present</p>
               <b className="Work-subheader">Tools</b>
-               <p className="Work-description">Java, React, Cypress, Gherkin, AWS</p>
-              <b className="Work-subheader">Team</b>
+               <p className="Work-description">Swift, Kotlin, Java, React, Cypress, Gherkin, AWS</p>
+              <b className="Work-subheader">Team(s)</b>
+              <p className="Work-description">
+                Firewide Core Deposits Platform for Customer Deposit Experiences (Special Projects)
+              </p>
                <p className="Work-description">
                 Customer Acquisition Experiences (Refer-A-Friend) and Explore Products
               </p>
@@ -56,8 +59,8 @@ function Work() {
               </p>
               <b className="Work-subheader">Description</b>
               <p className="Work-description">
-                Building and maintaining the Chase existing customer homepage and Refer-a-Friend experience 
-                on web and mobile platforms; enhancing the user experience for millions of daily customers. 
+                Spearheading a confidential, high-priority "tented" project, leading the end-to-end onboarding and 
+                technical strategy for Customer Deposit Experiences in the Chase web brower and Chase Mobile App.
               </p>
             </div>
           </div>

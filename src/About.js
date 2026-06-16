@@ -51,7 +51,6 @@ function About() {
               </div>
               <p className="About-subheader">💻 B.S. Computer Engineering at UNT</p>
               <p className="About-subheader">👩‍💻 Software Engineer at JPMorgan Chase & Co.</p>
-              <p className="About-subheader">👩‍🎨 Graphic Design Coordinator for STEM Connect 2025</p>
               <p className="About-subheader">🧪 Founder of Society of Asian Scientists and Engineers at UNT (SASE UNT)</p>
             </section>
 
@@ -71,7 +70,7 @@ function About() {
               hackathons and side projects to grow my software skills.
 
               I’m passionate about accessibility and building innovative solutions that create positive change. Outside of work, you’ll find me exploring 
-              national parks, practicing pilates, caring for 30+ plants, or playing with my two hamsters, Mochi and Miso. 
+              national parks, practicing pilates, caring for 30+ plants, or playing with my hamster Miso. 
               </p>
             </section>
           </div>
